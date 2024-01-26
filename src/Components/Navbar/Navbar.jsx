@@ -4,7 +4,10 @@ import { BsPhoneVibrate } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
 
+
+
 import logo from '../../assets/logo.png'
+
 
 const Navbar = () => {
 
@@ -41,10 +44,11 @@ const Navbar = () => {
                 <li className='flex'> <BsPhoneVibrate className='icon'/> Support</li>
                 <li className='flex'> <AiOutlineGlobal className='icon'/> Languages</li>
             </div>
-
+            
+            
             <div className='atb flex'>
-                <span>Sign In</span>
-                <span>Sign Out</span>
+            <span><a href='/login'>Sign In</a></span>
+            <span>Sign Out</span>
             </div>
         </div>
         <div className={noBg}>
@@ -55,7 +59,7 @@ const Navbar = () => {
             <div className={active}>
                 <ul className="menu flex">
                     <li onClick={removeNavBar} className="listItem">Home</li>
-                    <li onClick={removeNavBar} className="listItem">About</li>
+                    <li onClick={removeNavBar} className="listItem"> <a href="/about">About</a></li>
                     <li onClick={removeNavBar} className="listItem">Offers</li>
                     <li onClick={removeNavBar} className="listItem">Seats</li>
                     <li onClick={removeNavBar} className="listItem">Destination</li>

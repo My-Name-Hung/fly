@@ -7,6 +7,7 @@ import Info from './Components/Info/Info'
 import Lounge from './Components/Lounge/Lounge'
 import Support from './Components/Support/Support'
 import Travelers from './Components/Travelers/Travelers'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
       <Search />
       <Support />
       <Info />
-      {/* <Footer />
       <Lounge />
+      {/* <Footer />
       <Travelers /> */}
     </div>
   )
