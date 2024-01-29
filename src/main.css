@@ -131,6 +131,15 @@ h2 {
 .navBar .navBarOne .atb {
   gap: 1rem;
 }
+.navBar .navBarOne .atb .link {
+  color: var(--blackColor);
+  font-size: 13px;
+  cursor: pointer;
+}
+.navBar .navBarOne .atb .link:hover {
+  color: var(--PrimaryColor);
+  font-weight: 700;
+}
 .navBar .navBarOne .atb span {
   color: var(--blackColor);
   font-size: 13px;
@@ -138,7 +147,7 @@ h2 {
 }
 .navBar .navBarOne .atb span:hover {
   color: var(--PrimaryColor);
-  font-size: 700;
+  font-weight: 700;
 }
 .navBar .navBarTwo {
   display: flex;
@@ -150,7 +159,7 @@ h2 {
   transition: 0.3s ease-in-out;
 }
 .navBar .navBarTwo .logoDiv .logo {
-  width: 10%;
+  width: 15%;
 }
 @media screen and (max-width: 768px) {
   .navBar .navBarTwo .navBarMenu {
@@ -171,6 +180,12 @@ h2 {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+  .navBar .navBarTwo .navBarMenu .menu .link {
+    color: var(--blackColor);
+  }
+  .navBar .navBarTwo .navBarMenu .menu .link:hover {
+    color: var(--PrimaryColor);
   }
   .navBar .navBarTwo .navBarMenu .menu .listItem {
     padding: 0.5rem 0;
@@ -507,4 +522,67 @@ h2 {
 .travelers .sectionContainer .travelersContainer:hover .travelerIMG {
   bottom: 120px;
   transition: 1s ease-in-out;
+}
+
+.footer {
+  background: var(--SecondaryColor);
+}
+.footer .sectionContainer {
+  gap: 2.5rem;
+}
+.footer .sectionContainer .gridOne {
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+}
+.footer .sectionContainer .gridOne .logoDiv .Logo {
+  width: 20%;
+}
+.footer .sectionContainer .gridOne .socialIcon {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer .sectionContainer .gridOne .socialIcon .icon {
+  height: 50px;
+  width: 30px;
+  border-radius: 10rem;
+  border: 1px solid var(--borderColor);
+  box-shadow: var(--boxShadow);
+  padding: 0.4rem;
+  color: var(--greyText);
+}
+.footer .sectionContainer .gridOne .socialIcon .icon:hover {
+  background: var(--PrimaryColor);
+  transform: translateY(-7px);
+  transition: var(--transition);
+  border: 1px solid var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+.footer .sectionContainer .footerLinks {
+  display: grid;
+}
+.footer .sectionContainer .footerLinks .linkTitle {
+  color: var(--blackColor);
+  font-weight: 500;
+  display: block;
+  padding-bottom: 1rem;
+}
+.footer .sectionContainer .footerLinks li .link {
+  display: block;
+  color: var(--greyText);
+  transition: var(--transition);
+  padding: 0.3rem 0;
+}
+.footer .sectionContainer .footerLinks li .link:hover {
+  transform: translateX(7px);
+  color: var(--PrimaryColor);
+  font-weight: 700;
+}
+.footer .copyRightDiv {
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 1px solid var(--greyText);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

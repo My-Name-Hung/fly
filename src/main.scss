@@ -138,6 +138,18 @@ h2{
         .atb{
             gap: 1rem;
 
+            .link{
+                color:var(--blackColor);
+                font-size: 13px;
+                cursor: pointer;
+
+                &:hover{
+                    color: var(--PrimaryColor);
+                    font-weight: 700;
+                }
+            }
+
+
             span{
                 color: var(--blackColor);
                 font-size: 13px;
@@ -145,7 +157,7 @@ h2{
 
                 &:hover{
                     color: var(--PrimaryColor);
-                    font-size: 700;
+                    font-weight: 700;
                 }
             }
         }
@@ -162,7 +174,7 @@ h2{
 
         .logoDiv{
             .logo{
-                width: 10%;
+                width: 15%;
             }
         }
 
@@ -185,6 +197,14 @@ h2{
                     flex-direction: column;
                     gap: .5rem;
                     text-align: center;
+
+                    .link{
+                        color: var(--blackColor);
+
+                        &:hover{
+                            color: var(--PrimaryColor);
+                        }
+                    }
 
                     .listItem{
                         padding: .5rem 0;
@@ -593,3 +613,81 @@ h2{
 }
 
 //Footer section styling ================>
+.footer{
+    background: var(--SecondaryColor);
+    .sectionContainer{
+        gap: 2.5rem;
+
+        .gridOne{
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logoDiv{
+                .Logo{
+                    width: 20%;
+                }
+            }
+
+            .socialIcon{
+                margin-top: 1rem;
+                gap: 1rem;
+
+                .icon{
+                    height: 50px;
+                    width: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid var(--borderColor);
+                    box-shadow: var(--boxShadow);
+                    padding: .4rem;
+                    color: var(--greyText);
+
+                    &:hover{
+                        background: var(--PrimaryColor);
+                        transform: translateY(-7px);
+                        transition: var(--transition);
+                        border: 1px solid var(--PrimaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+
+        .footerLinks{
+            display: grid;
+            .linkTitle{
+                color: var(--blackColor);
+                font-weight: 500;
+                display: block;
+                padding-bottom: 1rem;
+            }
+
+            li .link{
+                display: block;
+                color: var(--greyText);
+                transition: var(--transition);
+                padding: .3rem 0;
+
+                &:hover{
+                    transform: translateX(7px);
+                    color: var(--PrimaryColor);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .copyRightDiv{
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 1px solid var(--greyText);
+        text-align: center;
+    }
+}
+
+//MEDIA SCREEN STYLING ==========================>
+@media screen and (min-width: 480px) {
+    
+}

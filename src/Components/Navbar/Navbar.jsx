@@ -6,7 +6,8 @@ import { CgMenuGridO } from "react-icons/cg";
 
 
 
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo2.png'
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
             
             
             <div className='atb flex'>
-            <span><a href='/login'>Sign In</a></span>
+            <Link to={'/login'} className='link'> Sign In</Link>
             <span>Sign Out</span>
             </div>
         </div>
@@ -59,7 +60,7 @@ const Navbar = () => {
             <div className={active}>
                 <ul className="menu flex">
                     <li onClick={removeNavBar} className="listItem">Home</li>
-                    <li onClick={removeNavBar} className="listItem"> <a href="/about">About</a></li>
+                    <li onClick={removeNavBar} className="listItem"> <Link to={'/about'} className='link'>About</Link></li>
                     <li onClick={removeNavBar} className="listItem">Offers</li>
                     <li onClick={removeNavBar} className="listItem">Seats</li>
                     <li onClick={removeNavBar} className="listItem">Destination</li>
