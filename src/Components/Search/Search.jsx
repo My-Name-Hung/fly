@@ -1,8 +1,11 @@
-import React, {useRef, useState} from 'react'
+import React, {useRef, useState, useEffect} from 'react'
 import { IoLocationOutline } from "react-icons/io5";
 import { RiAccountPinCircleLine } from "react-icons/ri";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
+// Import AOS =================>
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Search = () => {
   
@@ -13,9 +16,14 @@ const Search = () => {
     setDate(e.target.value);
   };
   
+  // UseEffect to set animation duration ============>
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <div className='search container section'>
-      <div className="sectionContainer grid">
+      <div data-aos='fade-up' data-aos-duration='2500' className="sectionContainer grid">
 
         <div className="btns flex">
 
@@ -33,7 +41,7 @@ const Search = () => {
 
         </div>
 
-        <div className="searchInputs flex">
+        <div data-aos='fade-up' data-aos-duration='2000' className="searchInputs flex">
           <div className="singleInput flex">
             <div className="iconDiv">
               <IoLocationOutline className='icon'/>
